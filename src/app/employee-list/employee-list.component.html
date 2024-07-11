@@ -1,0 +1,20 @@
+<ion-content style="height: auto;">
+  <ion-card-content>
+    <ion-card>
+      <div *ngIf="employees.length">
+      <ul>
+        <li *ngFor="let employee of employees">
+          {{ employee.employee_name }} ({{ employee.employee_age }})
+          <button (click)="editEmployee(employee.id)">Edit</button>
+          <button (click)="deleteEmployee(employee.id)">Delete</button>
+        </li>
+      </ul>
+    </div>
+    </ion-card>
+    <ion-card>
+      <div>
+        <button>Go to employee form</button>
+      </div>
+    </ion-card>
+  </ion-card-content>
+</ion-content>

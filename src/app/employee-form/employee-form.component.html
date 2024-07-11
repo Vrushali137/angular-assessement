@@ -1,0 +1,20 @@
+<ion-content>
+
+  <form (ngSubmit)="addEmployee()">
+    <label>
+      Name:
+      <input type="text" [(ngModel)]="employee.name" name="name">
+    </label>
+    <label>
+      Salary:
+      <input type="text" [(ngModel)]="employee.salary" name="salary">
+    </label>
+    <label>
+      Age:
+      <input type="text" [(ngModel)]="employee.age" name="age">
+    </label>
+    <button type="submit">Add Employee</button>
+  </form>
+  <button (click)="updateEmployee()">Update Employee</button>
+  
+</ion-content>
